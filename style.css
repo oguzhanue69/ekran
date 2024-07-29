@@ -1,0 +1,109 @@
+.main{
+    display: flex;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.split.left{
+    position: absolute;
+    left: 0;
+    background-color: plum;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("samsung-galaxy-s24-ultra-1000gb-grå-titan.avif");
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
+.split.left h1{
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
+    color: white;
+    backdrop-filter: brightness(.5);
+    letter-spacing: 4px;
+}
+.split.right{
+    position: absolute;
+    right: 0;
+    background-color: palegreen ;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("iphone-og-image-202309_GEO_EMEA.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.split.right h1{
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
+    color: white;
+    backdrop-filter: brightness(.5);
+    letter-spacing: 4px;
+}
+.active-left .left {
+    width: 75%;
+}
+.active-left .right {
+    width: 25%;
+}
+.active-right .left {
+    width: 25%;
+}
+.active-right .right {
+    width: 75%;
+}
+button{
+    width: 200%;
+    background-color: grey;
+    text-decoration-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: white;
+}
+.left,
+.right{
+    transition: width 2s ease-in-out;
+}
+.leftBtn{
+    padding: 10px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+
+}
+.leftBtn:hover{
+    border: white;
+    color: blueviolet;
+    border: solid 2px blueviolet;
+}
+.rightBtn{
+    padding: 10px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+}
+.rightBtn:hover{
+    border: white;
+    color: blueviolet;
+    border: solid 2px blueviolet;
+}
+/* burada 760px altında yapılacak değişimler */
+@media (max-width:768px) {
+    .split.left h1{
+        font-size: 50px;
+        letter-spacing: 0px;
+    }
+
+.split.right h1 {
+    font-size: 50px;
+    letter-spacing: 0px;
+}
+}
